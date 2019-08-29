@@ -1,0 +1,65 @@
+@import "~styles/variable.less";
+
+.inputWidth {
+  .inputWidth();
+}
+
+.purchase-right {
+  padding: 10px;
+}
+
+.step-dot {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #eee;
+  margin: 4px;
+
+  &:not(:last-child)::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 4px;
+    background-color: #eee;
+    right: -8px;
+    top: 3px;
+  }
+
+  &.finish {
+    background-color: #69b412;
+  }
+
+  &.error {
+    background-color: #fa5555;
+  }
+
+  &.process {
+    background-color: #f0bb2e;
+  }
+}
+
+.delete-btn {
+  margin: 0 20px;
+  cursor: pointer;
+
+  .delete-icon {
+    color: #f00;
+    margin-right: 3px;
+  }
+}
+
+.ant-list-split .ant-list-item {
+  text-align: center;
+}
+
+.client-select-reset {
+  cursor: pointer;
+}
+
+/deep/.ant-list-split .ant-list-item {
+  border: none;
+  padding: 0;
+}

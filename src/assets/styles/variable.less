@@ -1,0 +1,129 @@
+// 查看详情页各级块状label标题 
+.h3_title() {
+  border-left: 4px solid #1890FF;
+  padding-left: 6px;
+}
+
+// 查看详情页头部新建/详情标题
+.prompt-title() {
+  font-size: 16px;
+}
+
+// 编辑删除color
+.delete {
+  color: #F00;
+  margin: 0 2px;
+}
+
+// 编辑想更多color
+.more {
+  margin: 0 2px;
+  color: #6BC67B;
+}
+
+// 所有Form表单Input框内容区域统一宽度
+.inputWidth() {
+  width: 200px;
+}
+
+// 所有Form统一Label四个字内宽度固定
+.labelWidth() {
+  width: 90px;
+}
+
+// 所有Form统一Label五个字到八个内容宽度
+.labelWidth_8() {
+  width: 108px;
+}
+
+// 非详情页From表单控件 统一上下间距
+.inputSpace() {
+  // margin: 8px 0;
+}
+
+// 查看详情统一Input输入框重置Disable样式
+/deep/ .ant-input-disabled {
+  // border: 0;
+  background-color: #FFF;
+  cursor: auto;
+  color: #333;
+}
+
+// 统一lebel超过宽度显示省略号
+/deep/ .ant-form-item-label {
+  text-overflow: ellipsis;
+}
+
+// 查看详情统一Number输入框重置Disable样式
+.ant-input-number-disabled {
+  border: 0;
+  background-color: #FFF;
+  cursor: auto;
+  color: #333;
+}
+
+// 查看详情统一三级联动输入框重置字体颜色样式
+.ant-cascader-picker-disabled {
+  color: #666;
+}
+
+// 查看详情统一Select输入框重置字体颜色样式
+.ant-select-disabled {
+  color: #666;
+}
+
+// 查看详情统一Select样式
+/deep/ .ant-select-disabled .ant-select-selection {
+  border: 0;
+  background-color: #FFF;
+}
+
+// 查看详情统一时间控件样式
+/deep/ .ant-cascader-picker-disabled .ant-cascader-input {
+  border: 0;
+  background-color: #FFF !important;
+}
+
+// 统一所有栅格上下间距
+.ant-col-8,
+.ant-col-24,
+.ant-col-12 {
+  margin: -2px 0;
+}
+
+// 统一所有表格项TR高度或Padding上下间距
+/deep/ .ant-table-thead>tr>th,
+/deep/ .ant-table-tbody>tr>td {
+  padding: 12px 16px;
+}
+
+.ant-table-tbody /deep/ .ant-table-tbody>tr>td {
+  padding: 12px 16px;
+}
+
+// 统一所有详情页label color
+.labelColor() {
+  color: #666;
+}
+
+// 高度塌陷
+.clearfix() {
+  display: block;
+  content: "clear";
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+//审批流程控制页面中顶部描述和底部操作的隐藏 
+.approval-hind {
+  display: none;
+}
+
+// 单行文本省略号
+.ellipsis() {
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}

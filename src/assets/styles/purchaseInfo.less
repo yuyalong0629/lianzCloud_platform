@@ -1,0 +1,68 @@
+@import "~styles/variable.less";
+
+.inputWidth {
+  .inputWidth();
+}
+
+.purchase-info {
+  .purchase-info-title {
+    .h3_title();
+    margin: 10px 0;
+  }
+
+  .labelColor {
+    /deep/ .ant-form-item-label label {
+      .labelColor();
+    }
+  }
+}
+
+.prompt-title {
+  border-bottom: 1px solid #ebedf0;
+  min-height: 40px;
+  margin-bottom: 10px;
+
+  .prompt-wrapper {
+    display: flex;
+    justify-content: flex-end;
+
+    .prompt-edit {
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+    .prompt-delete {
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    .prompt-close {
+      cursor: pointer;
+      padding: 0 10px;
+      border-left: 1px solid #d8d8d8;
+    }
+  }
+}
+
+/deep/ .ant-steps-item-finish>.ant-steps-item-content>.ant-steps-item-title,
+/deep/ .ant-steps-item-wait>.ant-steps-item-content>.ant-steps-item-title {
+  font-size: 14px;
+  color: #666;
+}
+
+/deep/ .ant-steps-item-process>.ant-steps-item-content>.ant-steps-item-title {
+  font-size: 14px;
+  color: #333333;
+}
+
+.stepC {
+  font-size: 12px;
+}
+
+/deep/ .ant-form-item-control,
+/deep/.ant-form-item-children {
+  width: 100% !important;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
